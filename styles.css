@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(45, 53, 59);
+    color: #00ff00;
+    font-family: 'Bungee', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color: #ff6347;
+    font-size: 2em;
+  }
+  
+  #countdown {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .countdown-segment {
+    flex: 1;
+    min-width: 100px;
+  }
+  
+  .number-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1e90ff;
+  }
+  
+  .label {
+    font-size: 1em;
+    color: #ff6347;
+  }
+  
+  footer {
+    margin-top: 30px;
+    color: #ff6347;
+    font-size: 0.8em;
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    #countdown {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .countdown-segment {
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    .number {
+      font-size: 2em;
+    }
+  
+    .label {
+      font-size: 0.9em;
+    }
+  }
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ff6347; /* Tomato color */
+    font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+    #countdown {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .number {
+        font-size: 1.5em;
+    }
+
+    .label {
+        font-size: 0.8em;
+    }
+}
+
+/* Normal styles for all screen sizes */
+body {
+    font-size: 16px;
+  }
+  
+  /* Media query for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    /* Additional styles for smaller screens */
+    .menu {
+      display: none;
+    }
+  }
